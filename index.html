@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/jass.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <header class="container">
+        <h1>Weather Tracker Forecast</h1>
+  </header>
+        <h3>Check The Forecast</h3>
+    <input id="searchbar" onkeyup="search_cities()" type="text"
+        name="search" placeholder="Search Cities..">
+    <button class="favorite styled"
+        type="button">
+    Search
+    </button>
+    <body>
+        <section id="Today"></section>
+        <section id="Forecast"></section>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+        integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+        crossorigin="anonymous"
+      ></script>
+      <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
+        integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" 
+        crossorigin="anonymous"
+      ></script>
+      <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" 
+        integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" 
+        crossorigin="anonymous"
+      ></script>
+      <script src="script.js"></script>
+    </body>
